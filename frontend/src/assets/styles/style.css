@@ -1,0 +1,452 @@
+/* *********************
+Common
+************************* */
+* {
+  margin: 0;
+}
+html {
+  font-family: "Roboto";
+}
+
+/* *********************
+Header
+************************* */
+.nav {
+  background-color: white;
+  width: 100%;
+  color: black;
+  border: #707070;
+}
+.nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.nav .navbar h3 {
+  font-family: "Copperplate";
+  color: black;
+  /* margin-top: 1%; */
+  font-size: 30px;
+  margin-left: 1%;
+}
+.nav .navbar h3 img{
+  height: 30px;
+}
+
+.nav .navbar .signin {
+  display: flex;
+  align-items: center;
+}
+.nav .navbar .signin h4 {
+  padding: 0 15px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+a.sign {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.signin img {
+  height: 30px;
+  padding-left: 10px;
+}
+.bg{
+  background-color: #EAECF8;
+}
+.bg img {
+  width: 100%;
+}
+/**********************
+Home Page
+**************************/
+
+.main {
+  background-color: #EAECF8;
+}
+li {
+  list-style: none;
+}
+.row {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.row img {
+  width: 25%;
+}
+.row .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.name {
+  font-size: 23px;
+  margin-left: 2%;
+  color: black;
+}
+.add {
+  display: flex;
+  justify-content: space-between;
+}
+.prize {
+  font-size: 20px;
+  margin-left: 2%;
+  color: black;
+}
+.btn {
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 5px 15px;
+  color: black;
+  background-color: #A8C8DF;
+  margin-right: 10%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.number {
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 4px 17px;
+  color: black;
+  background-color: #A8C8DF;
+  margin-right: 10%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/****************
+  Shipment
+  ********************/
+
+.heading {
+  width: 100%;
+  background-color: #BFBDD2;
+  text-align: center;
+}
+.heading h4 {
+  color: black;
+  font-size: 30px;
+  padding: 4%;
+}
+.formcolor{
+  background-color: #EAECF8;
+}
+.form {
+  font-family: "Roboto", sans-serif;
+  margin-left: 20%;
+  padding-top: 20px;
+}
+.order table {
+  margin: 0;
+  width: 100%;
+  color: #313636;
+  border-collapse: collapse;
+}
+.order tr {
+  height: 2rem;
+}
+
+.order .item-name {
+  width: 60%;
+}
+.order .quantity {
+  width: 0%;
+  position: relative;
+  /* right: 36%; */
+}
+.order .item-price {
+  width: 1%;
+  position: relative;
+  right: 17%;
+}
+.finalprice {
+  font-weight: bold;
+}
+.item-name1 {
+  border-top: 1px solid #48597b;
+}
+.quantity1 {
+  width: 0%;
+  position: relative;
+  border-top: 1px solid #48597b;
+  /* right: 36%; */
+}
+
+.form input {
+  width: 45%;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid black
+}
+::placeholder {
+  color: gray;
+}
+
+.form button {
+  margin-top: 4%;
+  background-color: #A8C8DF;
+  border-radius: 5%;
+  color: black;
+  border: 0;
+  padding: 11px;
+  border-radius: 9px;
+}
+/* ***************
+  Thankyou page
+  ******************* */
+.note p {
+  position: relative;
+  text-align: center;
+  /* left: 26%; */
+  font-size: 24px;
+  margin-top: 6%;
+  padding-bottom: 50px;
+}
+.note a {
+  text-decoration: none;
+}
+span.color {
+  color: cornflowerblue;
+}
+.btn3 {
+  border-color: #48597b;
+  background-color: #A8C8DF;
+  color: black;
+  position: relative;
+  border-radius: 25px;
+  height: 40px;
+  left: 44%;
+  cursor: pointer;
+  border: 0;
+  padding: 0 20px;
+}
+
+/* ***************
+  Footer
+  ******************* */
+footer {
+  font-family: "Roboto", sans-serif;
+  position: sticky;
+  bottom: 0;
+  left: 0%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0px;
+  background-color: white;
+  border-top: 1px solid white;
+  width: 100%;
+}
+
+footer .subtotal {
+  color: black;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+footer button {
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #A8C8DF;
+  color: black;
+  border: 0;
+  padding: 8px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+/* ***************************************
+
+Signin and Signup
+
+************************************* */
+
+.popup {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.popup .popup-inner {
+  background-color: #EAECF8;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  left: 35vw;
+  top: 15%;
+  width: 30%;
+  /* height: 45%; */
+}
+
+.popup .popup-inner h1 {
+  font-family: "copperplate";
+  font-weight: bold;
+  top: 7%;
+  position: relative;
+  color: black;
+  font-size: 30px;
+}
+.popup .popup-inner h1 img{
+  height: 30px;
+}
+.popup .popup-inner h2 {
+  color: black;
+  top: 6%;
+  position: relative;
+}
+.popup .popup-input {
+  top: 6%;
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+.popup input {
+  width: 70%;
+  height: 4vh;
+  background-color: white;
+  border: 1;
+  border: 1px solid black;
+}
+.popup-input ::placeholder {
+  color: #bfbfbf;
+}
+.popup .popup-input button {
+  width: 73%;
+  height: 5vh;
+  background-color: #A8C8DF;
+  font-size: larger;
+  border: 0;
+  color: black;
+}
+.popup-input p{
+  color: black;
+}
+.popup-input p a{
+  color: black;
+}
+
+
+/* ********************************************************************************* */
+@media (max-width: 1024px) {
+  .popup .popup-inner {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    left: 23vw;
+    top: 15%;
+    width: 50%;
+  }
+}
+/* ************************************************************ */
+@media (max-width: 800px) {
+  .popup .popup-inner {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    left: 23vw;
+    top: 15%;
+    width: 50%;
+  }
+
+  .btn1 {
+    right: 50%;
+  }
+}
+/* ************************************************************ */
+@media (max-width: 600px) {
+  .btn1 {
+    left: 0%;
+  }
+  .note p {
+    font-size: 20px;
+  }
+  .btn3 {
+    left: 40%;
+  }
+}
+/* ************************************************************* */
+@media (max-width: 500px) {
+  .nav .navbar h3 {
+    font-size: 25px;
+  }
+  .signin img {
+    height: 24px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+  .prize {
+    font-size: 15px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  .number{
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 0;
+  }
+  footer .subtotal {
+    font-size: 15px;
+  }
+  footer button {
+    font-size: 12px;
+
+    height: 2rem;
+    margin-top: 2%;
+  }
+
+  .popup .popup-inner {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    left: 12vw;
+    top: 10%;
+    width: 76%;
+/*     height: 60%; */
+  }
+  .form {
+    margin-left: 5%;
+    font-size: 15px;
+  }
+  .form .order1 h4 {
+    left: 55%;
+  }
+  .form input {
+    width: 80%;
+  }
+
+  h3 h4 {
+    font-size: 15px;
+  }
+
+  .btn1 {
+    left: 3%;
+  }
+  .heading h4 {
+    font-size: 25px;
+  }
+  .note p {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .btn2 {
+    left: 30%;
+  }
+  .btn3 {
+    left: 34%;
+  }
+}
+/* ***********************************************************************/
