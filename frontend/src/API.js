@@ -8,7 +8,7 @@ var baseURL;
 // ) {
 //   baseURL = process.env.REACT_APP_API_BASE_URL;
 // } else 
-baseURL = "http://127.0.0.1:8000/";
+baseURL = "https://backend-shoeden.herokuapp.com/";
 // }
 
 const api = axios.create({
